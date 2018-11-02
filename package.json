@@ -1,0 +1,22 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reload": "reload -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coakenfold/animikii-nahc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coakenfold/animikii-nahc/issues"
+  },
+  "homepage": "https://github.com/coakenfold/animikii-nahc#readme",
+  "dependencies": {
+    "reload": "^2.3.1"
+  }
+}

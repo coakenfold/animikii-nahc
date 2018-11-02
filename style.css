@@ -1,0 +1,413 @@
+/* Main style file. Override general styles here. Specific module or page type
+styles, often have their on css files, which are called only if necessary. */
+
+/*
+* =============================
+* === Base ===
+* =============================
+*/
+
+html {
+    position: relative;
+    font-size: 100%;
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+  
+  p,
+  td,
+  li,
+  label {
+    font-size: 1.3rem;
+    font-size: calc(0.9rem + 0.4 * ((100vw - 20rem) / 60));
+    line-height: 1.4;
+    
+    line-height: 1.4;
+    font-weight: 300;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 1.4;
+  }
+  
+  /* $font-size-base * 2.5 */
+  h1,
+  .h1 {
+    font-size: 3.25em;
+    font-size: calc(2.25rem + 0.6 * ((100vw - 20rem) / 60));
+  
+    margin: 0.4em 0;
+  }
+  
+  /* $font-size-base * 2 */
+  h2,
+  .h2 {
+    font-size: 2.6em;
+    font-size: calc(1.8rem + 0.6 * ((100vw - 20rem) / 60));
+    
+    margin: 0.6em 0;
+  }
+  
+  /* $font-size-base * 1.75 */
+  h3,
+  .h3 {
+    font-size: 2.275em;
+    font-size: calc(1.575rem + 0.6 * ((100vw - 20rem) / 60));
+    
+    margin: 0.7em 0;
+  }
+  
+  /* $font-size-base * 1.5 */
+  h4,
+  .h4 {
+    font-size: 1.95em;
+    font-size: calc(1.35rem + 0.6 * ((100vw - 20rem) / 60));
+    
+    margin: 0.8em 0;
+  }
+  
+  /* $font-size-base * 1.25 */
+  h5,
+  .h5 {
+    font-size: 1.625em;
+    font-size: calc(1.125rem + 0.6 * ((100vw - 20rem) / 60));
+    
+    margin: 0.8em 0;
+  }
+  
+  /* $font-size-base */
+  h6,
+  .h6 {
+    font-size: 1.3em;
+    font-size: calc(0.9rem + 0.6 * ((100vw - 20rem) / 60));
+    
+    margin: 0.8em 0;
+  }
+  
+  p {
+    margin: 1em 0;
+  }
+  
+  /**** Side Nav Menu Customization****/
+  
+  .side-nav>h3:first-child {
+    margin-top: 0;
+  }
+  
+  .side-nav .nav .nav {
+    margin: 5px 0 10px 15px;
+  }
+  
+  .side-nav .nav li a {
+    padding: 2px;
+    padding-left: 13px;
+    color: #767676;
+  }
+  
+  .side-nav .nav li.active>a {
+    color: #337ab7 !important;
+    padding-left: 2px;
+    font-weight: 700;
+  }
+  
+  .side-nav .nav .nav .nav {
+    font-size: 12px !important;
+  }
+  
+  .side-nav .nav li a:hover {
+    color: #333 !important;
+    background: none !important;
+  }
+  
+  .side-nav .nav .nav {
+    position: relative;
+  }
+  
+  .side-nav .nav .nav:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    bottom: 0;
+    border-left: dashed 1px #555;
+  }
+  
+  /*
+  * =============================
+  * === Blog ===
+  * =============================
+  */
+  
+  .posts .post {
+    margin-bottom: 40px;
+  }
+  
+  /*
+    * =============================
+    * === Breadcrumb ===
+    * =============================
+    */
+  
+  .breadcrumb {
+    margin-top: 1rem;
+  }
+  
+  .breadcrumb li {
+    font-size: 0.8125rem;
+    color: #4A4A4A;
+  }
+  
+  .breadcrumb li+li::before {
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    padding: 0 5px;
+  }
+  
+  /*
+  * =============================
+  * === Util ===
+  * =============================
+  */
+  
+  .no-js {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    right: 2.5%;
+    width: 95%;
+    padding: 15px;
+    background-color: red;
+    color: #eee;
+    z-index: 500;
+    text-align: center;
+  }
+  
+  .save_button {
+    position: fixed;
+    top: 100px;
+    left: 25px;
+    z-index: 50;
+  }
+  
+  /*
+  * =============================
+  * === navbar stuff ===
+  * =============================
+  */
+  
+  
+  .navbar-top {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: 28px;
+    height: 50px;
+    padding: 5px;
+  }
+  
+  .navbar-top a {
+    color: #727272;
+    margin-left: 5px;
+  }
+  
+  .navbar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #333;
+    border-bottom: 4px solid #CD1C00;
+  }
+  
+  .navbar-nav {
+    position: relative;
+    z-index: 1;
+    height: 80px;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    position: relative;
+    z-index: 1;
+    height: 80px;
+    padding: 0;
+    margin-top: -15px;
+  }
+  
+  .navbar:before {
+    background-color: #000;
+    content: '';
+    position: absolute;
+    height: 80px;
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
+  
+  .ps-relative {
+    position: relative;
+  }
+  
+  .nav-item {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  /*
+  * =============================
+  * === navbar stuff ===
+  * =============================
+  */
+  
+  .stream,
+  .volunteer {
+    background-image: url('/images/Parallax-ice-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0 100px 0;
+    position: relative;
+  }
+  
+  .welcome {
+    /* background-image: url('/images/About-Section.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding: 100px 0;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    position: relative;
+    color: #fff;
+  }
+  
+  .welcome > .container {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .welcome canvas {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .hero {
+    background-image: url('/images/Team-Yukon-Photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .video-player {
+    height: 450px;
+    width: 100%;
+    background-color: #9B9A96;
+  }
+  
+  /*
+  * =============================
+  * === Responsive ===
+  * =============================
+  */
+  
+  .dropdown:hover>.dropdown-menu,
+  .dropdown:focus>.dropdown-menu {
+    display: block;
+  }
+  
+  .ft {
+    width: 100%;
+    /* height: 160px; */
+    /* Set the fixed height of the footer here */
+    /* line-height: 60px; */
+    /* Vertically center the text there */
+    background-color: #333333;
+    color: #fff;
+  }
+  
+  .ft .bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .ft a {
+    color: #fff;
+  }
+  
+  .social {
+    text-align: right;
+    font-size: 28px;
+    height: 50px;
+    padding: 5px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #CBCBCB;
+    padding: 50px 0;
+  }
+  
+  .gallery h2 {
+    margin-top: 0;
+  }
+  
+  .gallery img {
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+  
+  /* 
+  * Extra small devices (portrait phones, less than 576px) 
+  * No media query since this is the default in Bootstrap
+  */
+  
+  /* Small devices (landscape phones, 576px and up) */
+  
+  @media (min-width: 576px) {}
+  
+  /* Medium devices (tablets, 768px and up) */
+  
+  @media (min-width: 768px) {}
+  
+  /* Large devices (desktops, 992px and up) */
+  
+  @media (min-width: 992px) {}
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  
+  @media (min-width: 1200px) {}
+  

@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.css">    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">   
   
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" href="stylesheets/style.css">    
   <link rel="stylesheet" href="stylesheets/debug.css">    
   
@@ -34,23 +36,32 @@
     <footer class="ft">
         <div class="container">
           <div class="row">
-            <div class="offset-md-1 carousel">
-              <h2 class="ft-pad-h">OUR SPONSORS</h2>
-              <img src="files/lotteries-yukon.jpg" alt="Lotteries Yukon" width="300" height="216" />
-  
-              <img src="files/air-north.jpeg" alt="Air North" width="296" height="170" />
+            <div class="sponsors">
+              <h2 class="">OUR SPONSORS
+                
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                
+              </h2>
+              <div class="sponsors-carousel js-carousel">
+                <div><div class="sponsor"><img src="files/lotteries-yukon.jpg" alt="Lotteries Yukon"/></div></div>
+                <div><div class="sponsor"><img src="files/air-north.jpeg" alt="Air North" /></div></div>
+                <div><div class="sponsor"><img src="files/yukon.png" alt="Yukon" /></div></div>
+                <div><div class="sponsor"><img src="files/canada.png" alt="Canada" /></div></div>
+              </div>
             </div>
           </div>          
         </div>
-        <div class="ft-bot row">
-          <div class="ft-bot-col">
-            <p class="ft-info">© 2018 National Aboriginal Hockey Championships</p>
-          </div>
-          <div class="ft-bot-col social">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="ft-bot">
+          <div class="ft-bot-container container">
+            <div class="ft-bot-col">
+              <p class="ft-info">© 2018 National Aboriginal Hockey Championships</p>
+            </div>
+            <div class="ft-bot-col social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
         
@@ -70,5 +81,27 @@
           </div>
         </div>
       </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+      /*
+ *  Add your Scripts here
+**/
+
+$(document).ready(function(){
+  
+  // $('.js-carousel').carousel()
+  $('.js-carousel').slick({
+    slidesToShow: 4,
+    prevArrow: '<img class="sponsor-prev" src="files/arrow-left.jpg" />',
+    nextArrow: '<img class="sponsor-next" src="files/arrow-right.jpg" />'
+  });
+
+  
+});
+</script>
 </body>
 </html>

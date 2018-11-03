@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "reload": "reload -b"
+    "reload": "reload -b -p 8181"
   },
   "repository": {
     "type": "git",
